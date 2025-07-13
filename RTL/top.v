@@ -169,10 +169,10 @@ assign CLK = clk_int;
  *  000000       ROM
  */
 
-wire rom_region       = configured && slave_cycle && (A[23:0] >= 24'h000000 && A[23:0] < 24'h800000);
-wire scsi_region      = configured && slave_cycle && (A[23:0] >= 24'h800000 && A[23:0] < 24'h880000);
-wire interrupt_region = configured && slave_cycle && (A[23:0] >= 24'h880000 && A[23:0] < 24'h8c0000);
-wire idreg_region     = configured && slave_cycle && (A[23:0] >= 24'h8c0000 && A[23:0] < 24'h8f0000);
+wire rom_region       = scsi_addr_match && slave_cycle && (A[23:0] >= 24'h000000 && A[23:0] < 24'h800000);
+wire scsi_region      = scsi_addr_match && slave_cycle && (A[23:0] >= 24'h800000 && A[23:0] < 24'h880000);
+wire interrupt_region = scsi_addr_match && slave_cycle && (A[23:0] >= 24'h880000 && A[23:0] < 24'h8c0000);
+wire idreg_region     = scsi_addr_match && slave_cycle && (A[23:0] >= 24'h8c0000 && A[23:0] < 24'h8f0000);
 
 // --- Address Latching and Matching ---
 always @(negedge Z_FCS_n or negedge IORST_n) begin
@@ -404,6 +404,7 @@ intreg_access INTREG_ACCESS (
   .RESET_n(IORST_n),
   .FCS_n(!bfcs),
   .configured(configured),
+  .interrupt_region(interrupt_region),
   // --- Zorro III Bus Inputs
   .FC(FC),
   .ADDR(A[23:17]),

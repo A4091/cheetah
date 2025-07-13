@@ -17,6 +17,7 @@ module intreg_access (
     input wire RESET_n,
     input wire FCS_n,
     input wire configured,
+    input wire interrupt_region,
 
     // -- Zorro III Bus Inputs for IACK Cycle
     input wire [2:0] FC,       // Function Codes
@@ -48,7 +49,7 @@ reg [7:0] int_vector;  // Stores the interrupt vector written by the driver
 // The interrupt control register is mapped to the base address 0x880000.
 // A write to this space sets the interrupt vector (INTREG function).
 // A read during an IACK cycle retrieves the vector (INTVEC function).
-wire match_intreg_write = configured && !LOCK && (ADDR[23:17] == 8'h44) && !READ;
+wire match_intreg_write = interrupt_region && !LOCK && !READ;
 //wire match_intvec_read  = configured && !LOCK && (ADDR[23:17] == 8'h44) && READ; // Reading from the space provides the vector
 
 // Zorro III Interrupt Acknowledge Cycle Detection
