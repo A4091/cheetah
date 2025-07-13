@@ -28,6 +28,14 @@ module scsi_slave (
     output wire [1:0] ADDRL
 );
 
+// DS_n activity synchronizer (any strobe active)
+reg [1:0] ds_active_sync;
+wire ds_active = DS_n != 4'b1111;  // any strobe active
+
+// DOE synchronizer
+reg [1:0] doe_sync;
+wire doe_synced = doe_sync[1];
+
 // --- SCSI Slave Interface (replaces U304) ---
 reg ssync_n;
 reg as_latch_n;
@@ -42,9 +50,14 @@ always @(posedge CLKI or negedge IORST_n) begin
         as_latch_n <= 1'b1;
         ds_latch_n <= 1'b1;
         sreg_latch_n <= 1'b1;
+        ds_active_sync <= 2'b00;
+        doe_sync <= 2'b00;
     end else begin
+        // DS_n activity synchronizer
+        ds_active_sync <= {ds_active_sync[0], ds_active};
+        doe_sync <= {doe_sync[0], DOE};
         // Synchronize start of SCSI cycle
-        ssync_n <= !(scsi_cycle && DOE && (|DS_n != 4'b1111) && slave_cycle);
+        ssync_n <= !(scsi_cycle && doe_synced && ds_active_sync[1] && slave_cycle);
         // Generate Address Strobe
         as_latch_n <= ssync_n;
         // Generate Data Strobe

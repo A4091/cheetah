@@ -24,7 +24,7 @@ module A4092(
     input  wire C7M,     // 7MHz clock for arbitration
     inout  wire Z_FCS_n, // ZIII Signal, Is input and output (driven during DMA)
     output wire FCS,     // Output to U1 and U4 Addresslatch, high = latched!
-    output wire DOE,
+    inout  wire DOE,
     input  wire READ,
     inout  wire DTACK_n,
     output wire INT2_n,
@@ -96,6 +96,14 @@ reg  dtack;
 reg  scsi_cycle;
 reg  autoconfig_cycle;
 wire mybus_n; // bus ownership signal
+
+// DS_n activity synchronizer (any strobe active)
+reg [1:0] ds_active_sync;
+wire ds_active = DS_n != 4'b1111;  // any strobe active
+
+// DOE synchronizer (when used as input)
+reg [1:0] doe_sync;
+wire doe_synced = doe_sync[1];
 
 // Connections to Sub-modules
 wire bfcs; // The internal, buffered FCS signal
@@ -186,6 +194,17 @@ always @(negedge Z_FCS_n or negedge IORST_n) begin
   end
 end
 
+// --- DS_n Activity Synchronizer ---
+always @(posedge CLK or negedge IORST_n) begin
+  if (!IORST_n) begin
+    ds_active_sync <= 2'b00;
+    doe_sync <= 2'b00;
+  end else begin
+    ds_active_sync <= {ds_active_sync[0], ds_active};
+    doe_sync <= {doe_sync[0], DOE};
+  end
+end
+
 // --- Main Zorro Slave State Machine ---
 always @(posedge CLK or negedge IORST_n) begin
   if (!IORST_n) begin
@@ -207,7 +226,7 @@ always @(posedge CLK or negedge IORST_n) begin
       Z3_START: begin
           if (bfcs) begin
             z3_state <= Z3_IDLE;
-          end else if (DOE && DS_n != 4'b1111) begin
+          end else if (doe_synced && ds_active_sync[1]) begin
             z3_state <= Z3_DATA;
           end
         end
