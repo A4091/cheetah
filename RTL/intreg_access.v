@@ -21,7 +21,6 @@ module intreg_access (
 
     // -- Zorro III Bus Inputs for IACK Cycle
     input wire [2:0] FC,       // Function Codes
-    input wire [23:17] ADDR,     // Address Bus
     input wire LOCK,      // Zorro LOCK signal (original A1)
     input wire READ,
     input wire DS0_n,
