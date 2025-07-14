@@ -6,7 +6,8 @@ DEFINES=makedefines SERIAL=32'h${SERIAL}
 
 CABLE=usb21
 
-CPLDFITFLAGS=-loc on -slew slow -init low -terminate keeper  -unused ground -power std  -optimize speed -keepio
+#CPLDFITFLAGS=-loc on -slew slow -init low -terminate keeper  -unused ground -power std  -optimize speed -keepio
+CPLDFITFLAGS=-loc on -slew slow -init low -terminate keeper  -unused float -power std  -optimize speed -keepio
 
 .PHONY:	all clean timing
 

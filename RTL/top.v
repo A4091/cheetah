@@ -36,7 +36,7 @@ module A4092(
     input  wire BERR_n,
     input  wire BGn, // Zorro Bus Grant
     output wire BRn, // Zorro Bus Request
-    input  wire SENSEZ3_n,
+    input  wire SENSEZ3,
 
     // Buffer Control
     output wire DBLT,
@@ -51,6 +51,7 @@ module A4092(
     input  wire SINT_n,    // SCSI interrupt
     input  wire SBR_n,     // SCSI bus request (for DMA)
     input  wire MASTER_n,  // SCSI chip is master of local bus
+    input  wire SC0,       // SCSI snoop control
     output wire [1:0] SIZ, // Sizing bits from SCSI (for DMA)
     output wire SBG_n,     // SCSI bus grant (for DMA)
     output wire BMASTER,   // Inverted MASTER_n signal
@@ -186,7 +187,7 @@ always @(negedge Z_FCS_n or negedge IORST_n) begin
     end else begin
       scsi_addr_match <= 0;
     end
-    if ({A[31:24]} == 8'hFF && !configured && !shutup && !CFGIN_n && SENSEZ3_n) begin	// SENSEZ3_n = 0 disable autoconfig
+    if ({A[31:24]} == 8'hFF && !configured && !shutup && !CFGIN_n && SENSEZ3) begin	// SENSEZ3 = 0 disable autoconfig
       autoconfig_addr_match <= 1;
     end else begin
       autoconfig_addr_match <= 0;
@@ -259,7 +260,7 @@ assign DTACK_n  = dtack ? 1'b0 : 1'bz;
 //assign SLAVE_n  = !((slave_cycle && configured) || !iack_slave_n);
 assign SLAVE_n = (!(!bfcs && match && validspace) && iack_slave_n);
 
-assign CFGOUT_n = (SENSEZ3_n) ? autoconfig_cfgout : CFGIN_n;
+assign CFGOUT_n = (SENSEZ3) ? autoconfig_cfgout : CFGIN_n;
 assign CINH_n   = !(slave_cycle && configured);
 
 // Buffer Control
