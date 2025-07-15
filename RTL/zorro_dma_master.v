@@ -39,7 +39,7 @@ reg sterm_n;
 
 // The internal buffered FCS is a combination of the external FCS (during slave mode)
 // and the generated external FCS (during master mode)
-assign BFCS_out = (efcs && BMASTER) | (ZORRO_FCS_n && !BMASTER);
+assign BFCS_out = (efcs && BMASTER) | (!ZORRO_FCS_n && !BMASTER);
 
 // This logic runs on the main 25MHz clock
 always @(posedge CLK or negedge RESET_n) begin

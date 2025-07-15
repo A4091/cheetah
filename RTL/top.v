@@ -23,14 +23,13 @@ module A4092(
     input  wire Z_LOCK,  // Zorro LOCK signal
     input  wire C7M,     // 7MHz clock for arbitration
     inout  wire Z_FCS_n, // ZIII Signal, Is input and output (driven during DMA)
-    output wire FCS,     // Output to U1 and U4 Addresslatch, high = latched!
     inout  wire DOE,
-    input  wire READ,
+    inout  wire READ,
     inout  wire DTACK_n,
     output wire INT2_n,
     input  wire CFGIN_n,
     output wire CFGOUT_n,
-    output wire SLAVE_n,
+    inout wire SLAVE_n,
     output wire CINH_n,
     inout  wire MTCR_n, // Is input for IACK, output for master
     input  wire BERR_n,
@@ -45,20 +44,21 @@ module A4092(
     output wire ABOEH_n,
     output wire D2Z_n,
     output wire Z2D_n,
+    output wire FCS,       // Output to U1 and U4 Addresslatch, high = latched!
+    output wire BMASTER,   // Inverted MASTER_n signal
 
     // SCSI Chip Interface
     input  wire SLACK_n,   // SCSI ack during slave access
     input  wire SINT_n,    // SCSI interrupt
     input  wire SBR_n,     // SCSI bus request (for DMA)
-    input  wire MASTER_n,  // SCSI chip is master of local bus
-    input  wire SC0,       // SCSI snoop control
-    output wire [1:0] SIZ, // Sizing bits from SCSI (for DMA)
+    inout  wire [1:0] SIZ, // Sizing bits from SCSI (for DMA)
     output wire SBG_n,     // SCSI bus grant (for DMA)
-    output wire BMASTER,   // Inverted MASTER_n signal
-    output wire SCSI_AS_n, // Address Strobe to SCSI chip (PLD_AS)
+    input  wire MASTER_n,  // SCSI chip is master of local bus
+    inout  wire SCSI_AS_n, // Address Strobe to SCSI chip (PLD_AS)
     output wire SCSI_DS_n, // Data Strobe to SCSI chip (PLD_DS)
     output wire SCSI_SREG_n, // Register select to SCSI chip
     output wire SCSI_STERM_n,
+    input  wire SC0,       // SCSI snoop control
 
     // ROM Interface
     output wire ROM_OE_n,
@@ -78,8 +78,8 @@ module A4092(
     // Unused:
     // We _never_ issue a CBACK, since BURST isn't supported
     input  wire CBREQ_n,
-    output wire CBACK_n,
-    output wire MTACK_n
+    inout  wire CBACK_n,
+    inout  wire MTACK_n
 );
 
 `include "globalparams.vh"
@@ -312,7 +312,7 @@ assign D[11:8]  = TIE_OFF_CONDITION ? 4'd0  : 4'bZZZZ;
 Autoconfig AUTOCONFIG (
   .scsi_base_addr(scsi_base_addr),
   .ADDRL({A[8:2]}),
-  .FCS_n(!bfcs),
+  .FCS_n(bfcs),
   .CLK(CLK),
   .READ(READ),
   .DIN(D[31:24]),
