@@ -20,9 +20,9 @@ module dmaarbiter (
 
     reg RCHNG = 0;
     reg DMASTER_n = 1;					// 1 cycle delayed smaster_n
-    reg SMASTER_n = 1;					// MASTER_n synced to 7m clock 
+    reg SMASTER_n = 1;					// MASTER_n synced to 7m clock
     reg REGED = 0;						// registration indicator
-    reg SSBR_n = 1;						// SBR_n synced to 7m clock 
+    reg SSBR_n = 1;						// SBR_n synced to 7m clock
     reg BLOCKBG = 0;
 
     // until now 1:1 from A4091 U303 should converted to FSM for readability
@@ -35,7 +35,7 @@ module dmaarbiter (
 	 // Dorken: hold until SBR_n and MASTER_N inactive or IORST_n active or BLOCKBG active
     always @(*) begin
         if (!IORST_n) begin
-            SBG_n = 1;        
+            SBG_n = 1;
         end else if (FCS_n && DTACK_n && IORST_n && !BLOCKBG && !SBR_n && !EBG_n) begin
             SBG_n = 0;
         end else if ((SBR_n && MASTER_n) || BLOCKBG) begin
@@ -120,7 +120,7 @@ module dmaarbiter (
             SMASTER_n <= MASTER_n;
             DMASTER_n <= SMASTER_n;
             SSBR_n <= SBR_n;
-        end		  
+        end		
     end
 
 endmodule

@@ -57,7 +57,7 @@ module scsiaccess (
             endcase
         end
     end
- 
+
     // Async output signal to ZIII
     always @(*) begin
         if (!scsi_cycle) begin
@@ -112,5 +112,5 @@ module scsiaccess (
             endcase
         end
     end
-    
+
 endmodule

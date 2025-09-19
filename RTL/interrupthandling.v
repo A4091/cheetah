@@ -1,21 +1,21 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    12:11:44 07/20/2025 
-// Design Name: 
-// Module Name:    interrupthandling 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
+// Company:
+// Engineer:
 //
-// Dependencies: 
+// Create Date:    12:11:44 07/20/2025
+// Design Name:
+// Module Name:    interrupthandling
+// Project Name:
+// Target Devices:
+// Tool versions:
+// Description:
 //
-// Revision: 
+// Dependencies:
+//
+// Revision:
 // Revision 0.01 - File Created
-// Additional Comments: 
+// Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
 module interrupthandling(
@@ -91,7 +91,7 @@ module interrupthandling(
                 slave <= 1;
             end else if (vector_phase) begin
                 vector_read <= 1;
-                dtack <= 1;      
+                dtack <= 1;
             end
         end
     end

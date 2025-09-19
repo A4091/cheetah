@@ -1,21 +1,21 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    18:01:28 08/02/2025 
-// Design Name: 
-// Module Name:    top 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
+// Company:
+// Engineer:
 //
-// Dependencies: 
+// Create Date:    18:01:28 08/02/2025
+// Design Name:
+// Module Name:    top
+// Project Name:
+// Target Devices:
+// Tool versions:
+// Description:
 //
-// Revision: 
+// Dependencies:
+//
+// Revision:
 // Revision 0.01 - File Created
-// Additional Comments: 
+// Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
 
@@ -41,7 +41,7 @@ module A4092 (
     inout Z_FCS_n,      // ZIII Signal, Is input and output (driven during DMA)
     inout DOE,          // Databuffer Output Enable
     input READ,         // Read /Write
-    inout DTACK_n,      
+    inout DTACK_n,
     output INT2_n,
     input CFGIN_n,
     output CFGOUT_n,
@@ -162,10 +162,10 @@ module A4092 (
     // generate 25MHz Clock
     always @(posedge CLK_50M) begin
         CLK <= !CLK;
-    end  
+    end
 
     assign test = spi_read;
- 
+
     // ########################################
     // Zorro signal assignment
     assign CFGOUT_n = (!SENSEZ3 || cfgout) ? 1'bZ : 1;
@@ -211,7 +211,7 @@ module A4092 (
 
     // DS_n is output to cardinternal bus when MASTER_n is active (low)
     assign DS_n = MASTER_n ? 4'bZZZZ : ds_n_sig;
-            
+
     // SIZ and AL are output to NCR when MASTER_n is inactive (high)
     assign SIZ = MASTER_n ? siz_sig : 2'bZZ;
     assign AL = MASTER_n ? addrl_sig : 2'bZZ;
@@ -231,7 +231,7 @@ module A4092 (
 `else
     assign D[7:0] = intvector_read ? intdata_out : sid_read ? siddata_out : {8{1'bZ}};
 `endif
-        
+
     assign rom_cycle    = card_cycle && !A[23];                     // $000000 - $7FFFFF
     assign scsi_cycle   = card_cycle &&  A[23] && !A[19];           // $800000 - $87FFFF
     assign intreg_cycle = card_cycle &&  A[23] &&  A[19] && !A[18]; // $880000 - $8BFFFF

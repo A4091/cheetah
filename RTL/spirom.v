@@ -1,21 +1,21 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    20:21:44 08/03/2025 
-// Design Name: 
-// Module Name:    spirom 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
+// Company:
+// Engineer:
 //
-// Dependencies: 
+// Create Date:    20:21:44 08/03/2025
+// Design Name:
+// Module Name:    spirom
+// Project Name:
+// Target Devices:
+// Tool versions:
+// Description:
 //
-// Revision: 
+// Dependencies:
+//
+// Revision:
 // Revision 0.01 - File Created
-// Additional Comments: 
+// Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
 module spirom(
@@ -34,7 +34,7 @@ module spirom(
     output reg SPI_CLK = 0,
     output reg SPI_CS_n = 1,
     output reg SPI_MOSI = 0,
-    input SPI_MISO 
+    input SPI_MISO
     );
 
     localparam  SPI_IDLE    =  2'b00,
@@ -78,8 +78,8 @@ module spirom(
                         SPI_CS_n <= 0;
                         spi_state <= SPI_N;
                     end else if (romcycle) begin
-                        spi_state <= SPI_DTACK;                
-                    end 
+                        spi_state <= SPI_DTACK;
+                    end
                 end
                 SPI_N : begin
                     if (cnt == 0) begin

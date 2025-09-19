@@ -31,7 +31,7 @@ module autoconfig (
     localparam romvec = 16'd512;
 //    localparam romvec = 16'd0;
 	// ############################################################
-    
+
     reg configured_sig = 0;
     reg shutup_sig = 0;
     reg [31:24] card_addr = 8'hFF;

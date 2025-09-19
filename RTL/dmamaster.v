@@ -1,21 +1,21 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    18:20:37 07/21/2025 
-// Design Name: 
-// Module Name:    dmamaster 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
+// Company:
+// Engineer:
 //
-// Dependencies: 
+// Create Date:    18:20:37 07/21/2025
+// Design Name:
+// Module Name:    dmamaster
+// Project Name:
+// Target Devices:
+// Tool versions:
+// Description:
 //
-// Revision: 
+// Dependencies:
+//
+// Revision:
 // Revision 0.01 - File Created
-// Additional Comments: 
+// Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
 module dmamaster(
@@ -41,7 +41,7 @@ module dmamaster(
 
     localparam STATE_IDLE   = 3'b000,       // IDLE, Bus is free
                STATE_ABOEH  = 3'b001,       // ABOEL, ABOEH active
-               STATE_FCS    = 3'b011,       // ABOEL, ABOEH, FCS active 
+               STATE_FCS    = 3'b011,       // ABOEL, ABOEH, FCS active
                STATE_GAP    = 3'b010,       // ABOEL, FCS active
                STATE_DOE    = 3'b110,       // ABOEL, FCS, DOE active
                STATE_DS     = 3'b100;       // ABOEL, FCS, DOE, DS active, wait for DTACK active
@@ -77,7 +77,7 @@ module dmamaster(
             scsi_ds_sig <= !SCSI_DS_n;
         end
     end
-    
+
     // state register block
     always @ (negedge IORST_n, posedge clk) begin
         if (!IORST_n) begin
@@ -132,7 +132,7 @@ module dmamaster(
     assign dma_aboel = mybus;
 
     // efcs
-    always @ (*) begin       
+    always @ (*) begin
         case (dmamaster_next)
             STATE_FCS,
             STATE_GAP,

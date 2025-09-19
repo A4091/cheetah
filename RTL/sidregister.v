@@ -1,21 +1,21 @@
 `timescale 1ns / 1ps
 //////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date:    20:51:42 07/27/2025 
-// Design Name: 
-// Module Name:    sidregister 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-// Description: 
+// Company:
+// Engineer:
 //
-// Dependencies: 
+// Create Date:    20:51:42 07/27/2025
+// Design Name:
+// Module Name:    sidregister
+// Project Name:
+// Target Devices:
+// Tool versions:
+// Description:
 //
-// Revision: 
+// Dependencies:
+//
+// Revision:
 // Revision 0.01 - File Created
-// Additional Comments: 
+// Additional Comments:
 //
 //////////////////////////////////////////////////////////////////////////////////
 module sidregister(
@@ -45,7 +45,7 @@ module sidregister(
                         DOUT <= DIN;
                     end else begin
                         sid_read <= 1;
-                    end 
+                    end
                     dtack <= 1;
                 end
             end
