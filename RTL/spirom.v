@@ -95,7 +95,11 @@ module spirom(
                 end
                 SPI_P : begin
                     SPI_CLK <= 1;
-                    spi_dataout <= {spi_dataout[6:0], SPI_MISO};
+                    if (cnt <= 8 && READ) begin
+                        spi_dataout <= {spi_dataout[6:0], SPI_MISO};
+                    end else begin
+                        spi_dataout <= 0;
+                    end
                     cnt <= cnt -1;
                     spi_state <= SPI_N;
                 end
@@ -107,7 +111,11 @@ module spirom(
                 end
                 endcase
             end else begin
-                SPI_CS_n <= close;
+                //cancel SPI command if cycle ends before all bits shifted
+                SPI_CS_n <= 1;
+                if (cnt == 0) begin
+                    SPI_CS_n <= close;
+                end
                 spi_state <= SPI_IDLE;
             end
         end

@@ -339,7 +339,7 @@ module A4092 (
         .IORST_n (IORST_n),
         .romcycle (rom_cycle),
 `ifdef A22_21_MISSING
-        .addr ({A[23], A[23], A[20:2]}),
+        .addr ({&A[20:3], &A[20:3], A[20:2]}),
 `else
         .addr (A[22:2]),
 `endif
