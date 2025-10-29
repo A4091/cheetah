@@ -21,4 +21,7 @@
   (lib (name "CAY16_102J4LF")(type "KiCad")(uri "${KIPRJMOD}/../Libraries/CAY16_102J4LF.pretty")(options "")(descr ""))
   (lib (name "XC95144XL_5TQG144C")(type "KiCad")(uri "${KIPRJMOD}/../Libraries/XC95144XL_5TQG144C.pretty")(options "")(descr ""))
   (lib (name "Connector_IDC_local")(type "KiCad")(uri "${KIPRJMOD}/../Libraries/Connector_IDC.pretty")(options "")(descr ""))
+  (lib (name "TE_5749721-7")(type "KiCad")(uri "${KIPRJMOD}/../Libraries/TE_5749721-7.pretty")(options "")(descr ""))
+  (lib (name "TE_1761028-4")(type "KiCad")(uri "${KIPRJMOD}/../Libraries/TE_1761028-4.pretty")(options "")(descr ""))
+  (lib (name "SOIC-8_multi")(type "KiCad")(uri "/Users/stepan/git/A4091/A4092-dev/Kicad/Libraries/SOIC-8_multi.pretty")(options "")(descr ""))
 )

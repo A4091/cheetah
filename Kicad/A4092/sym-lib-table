@@ -22,4 +22,6 @@
   (lib (name "22112042")(type "KiCad")(uri "${KIPRJMOD}/../Libraries/22112042.kicad_sym")(options "")(descr ""))
   (lib (name "XC95144XL_5TQG144C")(type "KiCad")(uri "${KIPRJMOD}/../Libraries/XC95144XL_5TQG144C.kicad_sym")(options "")(descr ""))
   (lib (name "LT1118")(type "KiCad")(uri "${KIPRJMOD}/../Libraries/LT1118.kicad_sym")(options "")(descr ""))
+  (lib (name "TE_5749721-7")(type "KiCad")(uri "${KIPRJMOD}/../Libraries/TE_5749721-7.kicad_sym")(options "")(descr ""))
+  (lib (name "TE_1761028-4")(type "KiCad")(uri "${KIPRJMOD}/../Libraries/TE_1761028-4.kicad_sym")(options "")(descr ""))
 )
