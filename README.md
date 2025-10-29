@@ -1,20 +1,27 @@
-# A4092
+# A4770 Cheetah
 
-A modern successor to the A4091.
+A modern successor to the A4091 / A4092.
 
+All the goodness of the A4092:
 * TSSOP parts for smaller footprint
-* Flash instead of EPROM
+* SPI Flash instead of parallel EPROM
 * CPLD instead of GALs
 * Autoconfig moved into CPLD
 
-![PCB](Docs/PCB.png?raw=True)
+And also:
+* Update to NCR53c770 SCSI Host Controller
+* Ultra-Wide SCSI support
+* Drop unneeded ferrites and capacitors on SCSI lines
+* Replace DIP-switch mechanism entirely w/ Software/Logic
+* No more resistor arrays
+
+# THIS IS WORK IN PROGRESS. DO NOT BUILD. FEEDBACK IS WELCOME
+
+<!-- ![PCB](Docs/PCB.png?raw=True)
 
 And also as a real PCB:
 
 
 ![Real PCB](Docs/PCB.jpg?raw=True)
 
-
-NOTE: This design is still under development. The logic code is not fully
-functional and the current hardware revision (REV1) needs [a number of
-reworks](https://docs.google.com/document/d/1CN8fwkUjfMrxxf_vMktpmiZ6GXSNA-jGrsVZTGIDl_o/edit?usp=sharing)
+-->
