@@ -3637,7 +3637,7 @@
 						)
 					)
 				)
-				(number "135"
+				(number "119"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3655,7 +3655,7 @@
 						)
 					)
 				)
-				(number "143"
+				(number "135"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3673,7 +3673,7 @@
 						)
 					)
 				)
-				(number "148"
+				(number "143"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3691,7 +3691,7 @@
 						)
 					)
 				)
-				(number "154"
+				(number "148"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3709,7 +3709,7 @@
 						)
 					)
 				)
-				(number "163"
+				(number "154"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3727,7 +3727,7 @@
 						)
 					)
 				)
-				(number "168"
+				(number "163"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3745,7 +3745,7 @@
 						)
 					)
 				)
-				(number "173"
+				(number "168"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3763,7 +3763,7 @@
 						)
 					)
 				)
-				(number "181"
+				(number "173"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3781,7 +3781,7 @@
 						)
 					)
 				)
-				(number "190"
+				(number "181"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -3791,6 +3791,24 @@
 			)
 			(pin power_in line
 				(at -17.78 -22.86 0)
+				(length 2.54)
+				(name "V_{SS}"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+				(number "190"
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
+			)
+			(pin power_in line
+				(at -17.78 -25.4 0)
 				(length 2.54)
 				(name "V_{SS}"
 					(effects
