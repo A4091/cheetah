@@ -4105,6 +4105,16 @@
 		)
 		(uuid "4b2e09a0-7256-4db8-befe-e3dc3f42f102")
 	)
+	(text "PLD_SID unused"
+		(exclude_from_sim no)
+		(at 25.654 134.874 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5fe8e4ab-e342-4e27-9894-aca7c5b45d33")
+	)
 	(text "PLD_DS moved"
 		(exclude_from_sim no)
 		(at 24.638 129.794 0)
@@ -4517,6 +4527,10 @@
 	(no_connect
 		(at 100.33 27.94)
 		(uuid "1a40cff6-6ff6-4050-8ec4-e429813569b4")
+	)
+	(no_connect
+		(at 34.29 134.62)
+		(uuid "4622f5b0-4576-42ba-88af-f59dae8dec2f")
 	)
 	(no_connect
 		(at 195.58 63.5)
@@ -6148,28 +6162,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "PLD_SID"
-		(shape input)
-		(at 34.29 134.62 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "3297114d-3982-4a80-9da9-5b03c75a8657")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 23.6848 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
