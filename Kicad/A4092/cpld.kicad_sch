@@ -10656,7 +10656,7 @@
 				)
 			)
 		)
-		(property "Value" "33"
+		(property "Value" "0"
 			(at 146.05 140.97 90)
 			(effects
 				(font
