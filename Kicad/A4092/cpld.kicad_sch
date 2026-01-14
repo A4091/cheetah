@@ -5,8 +5,8 @@
 	(uuid "bfc88efc-9e1a-4a35-a915-827714d7aa1d")
 	(paper "A4")
 	(title_block
-		(title "A4092")
-		(rev "PROTO0")
+		(title "Cheetah UW")
+		(rev "PROTO1")
 		(company "amiga.technology")
 	)
 	(lib_symbols

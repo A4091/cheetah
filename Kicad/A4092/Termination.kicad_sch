@@ -5,8 +5,8 @@
 	(uuid "f9a7659a-a558-4c1a-ba59-fb895a40595b")
 	(paper "A4")
 	(title_block
-		(title "A4092")
-		(rev "PROTO0")
+		(title "Cheetah UW")
+		(rev "PROTO1")
 		(company "amiga.technology")
 	)
 	(lib_symbols
@@ -10066,28 +10066,6 @@
 			)
 		)
 	)
-	(global_label "PLD_EXT_TERM"
-		(shape input)
-		(at 57.15 153.67 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "5e9a6625-7734-4356-a13b-0dad4f07e16d")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 73.8026 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "GND"
 		(shape input)
 		(at 97.79 88.9 0)
@@ -11782,28 +11760,6 @@
 			)
 		)
 	)
-	(global_label "V5"
-		(shape input)
-		(at 52.07 153.67 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "d2bb7588-ef8a-481b-93f9-47212b88e1b7")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 46.7867 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
 	(global_label "GND"
 		(shape input)
 		(at 60.96 30.48 0)
@@ -12913,82 +12869,6 @@
 			(project "A4092"
 				(path "/8f9f4021-47aa-41d9-bea7-f6ccf72098bb/53e9e23b-3b92-4a87-a15c-9c224d6145c5"
 					(reference "C5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Small")
-		(at 54.61 153.67 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "311fb464-7780-41b0-93a6-ab6a3174a033")
-		(property "Reference" "R1"
-			(at 54.61 155.702 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Value" "4K7"
-			(at 54.61 153.67 90)
-			(effects
-				(font
-					(size 1.016 1.016)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 54.61 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 54.61 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor, small symbol"
-			(at 54.61 153.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part #" "C23162"
-			(at 54.61 153.67 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c6a80b8f-1726-4d0b-904f-e9cac9087c88")
-		)
-		(pin "1"
-			(uuid "c45bc95f-7c84-44e9-8b67-0760e9fc2d45")
-		)
-		(instances
-			(project "A4092"
-				(path "/8f9f4021-47aa-41d9-bea7-f6ccf72098bb/53e9e23b-3b92-4a87-a15c-9c224d6145c5"
-					(reference "R1")
 					(unit 1)
 				)
 			)
