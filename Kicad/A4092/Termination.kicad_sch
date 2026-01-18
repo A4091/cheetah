@@ -6290,7 +6290,7 @@
 		)
 		(uuid "275f41c7-b76a-4c82-8fc5-e6b1ffbe775a")
 	)
-	(text "Internal 2x25 Connector"
+	(text "Internal HD68 Connector"
 		(exclude_from_sim no)
 		(at 98.298 18.034 0)
 		(effects
@@ -6300,7 +6300,7 @@
 		)
 		(uuid "495d02d7-3596-4575-8480-b95aedf87986")
 	)
-	(text "External HD50 Connector"
+	(text "External HD68 Connector"
 		(exclude_from_sim no)
 		(at 97.79 81.026 0)
 		(effects
@@ -12414,7 +12414,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "5749721-7"
+		(property "Value" "5787082-7"
 			(at 123.19 80.772 90)
 			(effects
 				(font
@@ -12488,6 +12488,15 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C591676"
+			(at 135.89 105.41 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
@@ -14558,6 +14567,15 @@
 					(size 1.27 1.27)
 				)
 				(justify bottom)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C591675"
+			(at 135.89 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
