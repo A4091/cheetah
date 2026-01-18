@@ -4094,6 +4094,17 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "NOTE: If the Y2 circuit and direct BCLK output are removed, R4 and R6 \nshould both remain to prevent edge distortion"
+		(exclude_from_sim no)
+		(at 184.912 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "40ccd98a-57df-4213-9d62-29c4d877580b")
+	)
 	(text "Clock configuration:\n\nShared SCLK and BCLK:\n- Populate R6\n- Do not populate C8, Y2, R5\n\nSeparate clocks for SCLK and BCLK:\n- Do not populate R6\n"
 		(exclude_from_sim no)
 		(at 184.912 93.472 0)
@@ -8931,9 +8942,9 @@
 		(at 185.42 62.23 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "12c55402-ec52-457d-bce8-bd6e56dbdec6")
 		(property "Reference" "C8"
 			(at 186.69 60.452 0)
@@ -10789,7 +10800,7 @@
 		(at 238.76 31.75 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "99d174e5-118d-4c28-9223-ce8c9536532a")
@@ -10965,7 +10976,7 @@
 				)
 			)
 		)
-		(property "Value" "0"
+		(property "Value" "22"
 			(at 250.19 50.8 90)
 			(effects
 				(font
@@ -11190,7 +11201,7 @@
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
-		(dnp yes)
+		(dnp no)
 		(uuid "c2206679-d9e4-4f0a-bf4f-f5ec3ab4e512")
 		(property "Reference" "R6"
 			(at 226.568 57.15 90)
@@ -11286,7 +11297,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "R131"
 			(at 163.83 33.02 0)
 			(effects
 				(font
@@ -11409,9 +11420,9 @@
 		(at 215.9 63.5 90)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d3c47979-e85d-4614-a67c-294b7c1295fa")
 		(property "Reference" "R5"
 			(at 215.9 61.468 90)
@@ -11485,9 +11496,9 @@
 		(at 203.2 63.5 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "d623eb3e-f83e-4551-b627-c66693f77ec1")
 		(property "Reference" "Y2"
 			(at 200.406 57.15 0)
