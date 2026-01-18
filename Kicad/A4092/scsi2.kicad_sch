@@ -17165,7 +17165,7 @@
 			)
 		)
 	)
-	(global_label "GND"
+	(global_label "V5"
 		(shape input)
 		(at 109.22 116.84 180)
 		(fields_autoplaced yes)
@@ -17177,7 +17177,7 @@
 		)
 		(uuid "fbf4a55c-5aea-4721-b917-e5d6eb9e3950")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 102.3643 116.84 0)
+			(at 103.9367 116.84 0)
 			(effects
 				(font
 					(size 1.27 1.27)
