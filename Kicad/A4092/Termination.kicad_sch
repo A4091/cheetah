@@ -6280,6 +6280,16 @@
 		)
 		(uuid bdbc8f0f-c376-4ab2-9012-6af5572668a5)
 	)
+	(text "TODO: LCSC part number"
+		(exclude_from_sim no)
+		(at 158.496 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "13ff16ee-1da2-4b37-a0c1-11e817f9f12f")
+	)
 	(text "Active Termination\n"
 		(exclude_from_sim no)
 		(at 25.908 17.78 0)
@@ -6309,6 +6319,16 @@
 			)
 		)
 		(uuid "57b09ce0-9e5b-467e-8004-8bab312f1f35")
+	)
+	(text "TODO: LCSC part number"
+		(exclude_from_sim no)
+		(at 158.75 67.818 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "8af8a3e8-d8a9-43b4-a7b9-d96a5bbf6c09")
 	)
 	(text_box "SCSI termination power\n"
 		(exclude_from_sim no)

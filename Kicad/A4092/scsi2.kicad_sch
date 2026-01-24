@@ -17307,6 +17307,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C21190"
+			(at 265.43 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "cc89d27c-7c08-4bc5-b3c9-a4fa4bc72cc7")
 		)
@@ -17366,6 +17375,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 213.36 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C9900193416"
 			(at 213.36 128.27 0)
 			(effects
 				(font
@@ -18050,6 +18068,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 134.62 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C9900193416"
 			(at 134.62 59.69 0)
 			(effects
 				(font
@@ -18821,6 +18848,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C21190"
+			(at 273.05 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "9a5c043d-775d-4267-bcbb-8a3c7715cbe3")
 		)
@@ -18883,6 +18919,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 166.37 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C25804"
+			(at 166.37 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18959,6 +19004,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C21190"
+			(at 267.97 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "17768a28-6328-46e5-9196-ebdaa9307f6e")
 		)
@@ -19021,6 +19075,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 166.37 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C25804"
+			(at 166.37 92.71 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -19244,6 +19307,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 49.53 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C9900193416"
 			(at 49.53 72.39 0)
 			(effects
 				(font
@@ -20015,6 +20087,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C21190"
+			(at 280.67 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a460f581-1631-4914-a236-3976d63f0a05")
 		)
@@ -20077,6 +20158,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 257.81 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C21190"
+			(at 257.81 26.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20232,6 +20322,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C25804"
+			(at 166.37 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d6074df9-e2e4-4a1f-af6f-328b334c4ac4")
 		)
@@ -20301,6 +20400,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C25804"
+			(at 166.37 81.28 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "b3dba53e-12f6-420f-969d-4d817417dffc")
 		)
@@ -20363,6 +20471,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 278.13 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C21190"
+			(at 278.13 26.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20518,6 +20635,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C21190"
+			(at 270.51 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "32fc4128-03b1-43ac-aee6-e9864eeb4369")
 		)
@@ -20587,6 +20713,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C21190"
+			(at 260.35 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "adff7a62-5d08-4794-be45-40abac1781af")
 		)
@@ -20649,6 +20784,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 262.89 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C21190"
+			(at 262.89 26.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -20804,6 +20948,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C21190"
+			(at 275.59 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ccef23a9-834e-483b-a7ad-7040e792f1a1")
 		)
@@ -20952,6 +21105,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C21190"
+			(at 252.73 26.67 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "08cacb6f-0833-4287-a1a7-39c901b25b65")
 		)
@@ -21011,6 +21173,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 138.43 152.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C9900193416"
 			(at 138.43 152.4 0)
 			(effects
 				(font
@@ -21782,6 +21953,15 @@
 				(hide yes)
 			)
 		)
+		(property "LCSC Part #" "C25804"
+			(at 166.37 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "66d7c246-544a-4761-bea7-7424e87a7452")
 		)
@@ -21844,6 +22024,15 @@
 		)
 		(property "Description" "Resistor, small symbol"
 			(at 255.27 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part #" "C21190"
+			(at 255.27 26.67 90)
 			(effects
 				(font
 					(size 1.27 1.27)
