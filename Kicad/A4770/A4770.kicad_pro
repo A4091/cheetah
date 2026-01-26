@@ -660,7 +660,8 @@
     },
     "net_colors": {
       "CLK_50M": "rgb(255, 8, 168)",
-      "GND": "rgb(0, 72, 0)"
+      "GND": "rgb(222, 244, 78)",
+      "V5": "rgb(255, 96, 69)"
     },
     "netclass_assignments": null,
     "netclass_patterns": [
