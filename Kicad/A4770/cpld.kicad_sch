@@ -4179,7 +4179,7 @@
 	)
 	(text "PLD_DS was here:"
 		(exclude_from_sim no)
-		(at 25.654 101.854 0)
+		(at 24.13 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -4574,6 +4574,10 @@
 	(no_connect
 		(at 100.33 30.48)
 		(uuid "ce26aa8b-5173-4a9f-9f25-8377943fd690")
+	)
+	(no_connect
+		(at 34.29 104.14)
+		(uuid "f2f2a1a2-af8a-4fe1-bf27-c2bb120ed5a2")
 	)
 	(no_connect
 		(at 34.29 66.04)
@@ -7165,28 +7169,6 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
-			)
-		)
-	)
-	(global_label "SCLK"
-		(shape input)
-		(at 34.29 104.14 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "8986a236-2978-4750-87b1-430d3e0711d1")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 26.5272 104.14 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
