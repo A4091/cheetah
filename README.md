@@ -17,6 +17,8 @@ And also:
 
 # THIS IS WORK IN PROGRESS. DO NOT BUILD. FEEDBACK IS WELCOME
 
+![PCB](Docs/PCB.png?raw=True)
+
 <!-- ![PCB](Docs/PCB.png?raw=True)
 
 And also as a real PCB:
