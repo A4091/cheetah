@@ -9151,7 +9151,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "144-TQFP_XIL"
+		(property "Footprint" "Package_QFP:TQFP-144_20x20mm_P0.5mm"
 			(at 67.31 104.14 0)
 			(effects
 				(font

@@ -19274,7 +19274,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DGG56"
+		(property "Footprint" "SN74ABT16543DGGR:DGG56"
 			(at 125.73 133.35 0)
 			(effects
 				(font
@@ -19525,7 +19525,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DGG56"
+		(property "Footprint" "SN74ABT16543DGGR:DGG56"
 			(at 228.6 31.75 0)
 			(effects
 				(font
@@ -20532,7 +20532,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DGG56"
+		(property "Footprint" "SN74ABT16543DGGR:DGG56"
 			(at 27.94 31.75 0)
 			(effects
 				(font
@@ -20861,7 +20861,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DGG56"
+		(property "Footprint" "SN74ABT16543DGGR:DGG56"
 			(at 27.94 133.35 0)
 			(effects
 				(font
@@ -22778,7 +22778,7 @@
 				)
 			)
 		)
-		(property "Footprint" "DGG56"
+		(property "Footprint" "SN74ABT16543DGGR:DGG56"
 			(at 125.73 30.48 0)
 			(effects
 				(font
