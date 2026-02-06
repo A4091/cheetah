@@ -19204,7 +19204,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "10nF"
 			(at 196.85 48.2662 0)
 			(effects
 				(font
@@ -20521,7 +20521,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "10nF"
 			(at 214.63 68.5862 0)
 			(effects
 				(font
@@ -20586,7 +20586,7 @@
 		(at 270.51 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "84ebbf46-f19c-4901-95b6-ed0ff501580f")
@@ -20742,7 +20742,7 @@
 		(at 262.89 26.67 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "9190b7a4-3dc5-42f0-a483-35d815abd073")
@@ -20834,7 +20834,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "10nF"
 			(at 231.14 48.2662 0)
 			(effects
 				(font
@@ -21839,7 +21839,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100nF"
+		(property "Value" "10nF"
 			(at 214.63 27.9462 0)
 			(effects
 				(font

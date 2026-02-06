@@ -8960,7 +8960,7 @@
 		(at 143.51 22.86 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(fields_autoplaced yes)
@@ -9805,7 +9805,7 @@
 		(at 163.83 30.48 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "31de0ee8-7ff8-43f3-8da7-e60cf8c16e55")
@@ -10680,7 +10680,7 @@
 		(at 163.83 27.94 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "97512cbe-8f51-4f29-bde1-505f539ab373")
@@ -11233,7 +11233,7 @@
 		(at 163.83 33.02 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "c30ca084-590f-4c2e-932e-c0a85ec3b510")
@@ -11255,7 +11255,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "R131"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 163.83 33.02 0)
 			(effects
 				(font
@@ -11635,7 +11635,7 @@
 		(at 163.83 35.56 270)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp yes)
 		(uuid "f8de8419-7b9a-4315-b952-3f47b4669c94")
