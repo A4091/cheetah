@@ -23,6 +23,7 @@
 `define USE_SPIROM          // undef for Parallel ROM define for SPI ROM
 `undef USE_DIP_SWITCH       // undef to use Virtual Register, define to use Hardware Switch
 `define A22_21_MISSING      // undef if A22 and A21 are connected to CPLD define if address missing
+`undef 53C770               // if defined 25MHz Pin is an Input, else output 1/2 CLK_50M
 // ###########################################################
 
 module A4092 (
@@ -30,7 +31,11 @@ module A4092 (
     inout [1:0] AL,     // lower Addresslines for NCR
     inout [31:0] D,     // Data Bus
     input CLK_50M,      // 50MHz Clock Input
-    output reg CLK = 0, // 25MHz Clock Output
+`ifdef 53C770
+    input CLK,          // 25MHz Clock Input (NCR BCLK)
+`else
+    output reg CLK = 0, // 25MHz Clock Output (NCR BCLK)
+`endif
 
     // Zorro Bus Interface
     input IORST_n,      // I/O Reset
@@ -92,9 +97,8 @@ module A4092 (
 
     // SCSI ID Register
     output SID_n,       // Buffer Enable if DIP Switch is used
-    output DIP_EXT_TERM,// Termination Enable if NO DIP Switch
+    output DIP_EXT_TERM, // Termination Enable if NO DIP Switch
 
-    //test
     output test
     );
 
@@ -102,7 +106,6 @@ module A4092 (
     wire slavecycle;
     wire mastercycle;
     wire dtack_sig;
-    wire nobuscycle;
 
     // Buffercontrol
     wire [1:0] siz_sig;
@@ -159,21 +162,21 @@ module A4092 (
     wire dma_doe;
     wire [3:0] ds_n_sig;
 
+`ifndef 53C770
     // generate 25MHz Clock
     always @(posedge CLK_50M) begin
         CLK <= !CLK;
     end
-
-    assign test = spi_read;
+`endif
 
     // ########################################
     // Zorro signal assignment
     assign CFGOUT_n = (!SENSEZ3 || cfgout) ? 1'bZ : 1;
     assign SLAVE_n = slave_sig ? 0 : 1'bZ;
-    assign DTACK_n = dtack_sig ? 0 : 1'bZ;
+    assign DTACK_n = (dtack_sig && !Z_FCS_n) ? 0 : 1'bZ;
     assign CINH_n = slave_sig ? 0 : 1'bZ;
     assign MTACK_n = slave_sig ? 1 : 1'bZ;
-    assign INT2_n = (int_sig) ? 0 : 1'bZ;
+    assign INT2_n = int_sig ? 0 : 1'bZ;
 
     assign MTCR_n = mybus ? 1 : 1'bZ;
     assign Z_FCS_n = mybus ? !efcs : 1'bZ;
@@ -298,6 +301,7 @@ module A4092 (
     );
 
 	dmaarbiter DMA_ARBITER (
+        .test (test),
         .clk7m (C7M),
         .clk (CLK),
         .IORST_n (IORST_n),
@@ -313,7 +317,6 @@ module A4092 (
 	);
 
 	dmamaster DMA_MASTER (
-        .clk (CLK_50M),
         .bclk (CLK),
         .IORST_n (IORST_n),
         .SLAVE_n (SLAVE_n),
@@ -336,6 +339,7 @@ module A4092 (
 `ifdef USE_SPIROM
 	spirom SPI_ROM (
         .clk (CLK_50M),
+//        .clk (CLK),
         .IORST_n (IORST_n),
         .romcycle (rom_cycle),
 `ifdef A22_21_MISSING
@@ -405,7 +409,7 @@ module A4092 (
 	);
 
     sidregister SID_REGISTER (
-        .clk (CLK),
+        .clk (CLK_50M),
         .sid_cycle (sid_cycle),
         .IORST_n (IORST_n),
         .DOE (DOE),
