@@ -6280,16 +6280,6 @@
 		)
 		(uuid bdbc8f0f-c376-4ab2-9012-6af5572668a5)
 	)
-	(text "TODO: LCSC part number"
-		(exclude_from_sim no)
-		(at 158.496 135.89 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "13ff16ee-1da2-4b37-a0c1-11e817f9f12f")
-	)
 	(text "Active Termination\n"
 		(exclude_from_sim no)
 		(at 25.908 17.78 0)
@@ -6320,15 +6310,16 @@
 		)
 		(uuid "57b09ce0-9e5b-467e-8004-8bab312f1f35")
 	)
-	(text "TODO: LCSC part number"
+	(text "Design improvement:\nAt 20C the maximum instantaneous forward\ncurrent is 3A and the fuse trip current \nis 3.7A. This may result in the diode \nfailing before the fuse trips."
 		(exclude_from_sim no)
-		(at 158.75 67.818 0)
+		(at 38.1 155.956 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
+			(justify left)
 		)
-		(uuid "8af8a3e8-d8a9-43b4-a7b9-d96a5bbf6c09")
+		(uuid "a481a710-45a7-430d-8680-a9980591b05c")
 	)
 	(text_box "SCSI termination power\n"
 		(exclude_from_sim no)
@@ -12434,7 +12425,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "5787082-7"
+		(property "Value" "5749721-7"
 			(at 123.19 80.772 90)
 			(effects
 				(font
@@ -13289,8 +13280,8 @@
 				)
 			)
 		)
-		(property "Value" "LED (green)"
-			(at 242.57 42.418 0)
+		(property "Value" "LED"
+			(at 245.364 42.164 0)
 			(effects
 				(font
 					(size 1.27 1.27)

@@ -12218,10 +12218,22 @@
 		(uuid "19c8f59f-d593-420a-b387-83c2f8e9e9ed")
 	)
 	(junction
+		(at 170.18 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "220874bd-fb27-4ce4-a165-8dd5c031f776")
+	)
+	(junction
 		(at 233.68 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "24216542-13ac-45d0-a53d-25996246c9a6")
+	)
+	(junction
+		(at 170.18 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "24636437-0eb5-441e-8f46-7071f036fd78")
 	)
 	(junction
 		(at 191.77 133.35)
@@ -12332,12 +12344,6 @@
 		(uuid "b68561d7-8b73-496a-aca3-f8a4a85c714a")
 	)
 	(junction
-		(at 168.91 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "bd9c3ee0-de8d-4fee-94ba-f4880c615bfa")
-	)
-	(junction
 		(at 267.97 21.59)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12374,6 +12380,12 @@
 		(uuid "ca82494e-b10f-48f4-8a77-2dc766c8b228")
 	)
 	(junction
+		(at 170.18 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cab4f5b1-543f-4f4a-90e6-a5346c9dcbac")
+	)
+	(junction
 		(at 191.77 105.41)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -12390,12 +12402,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d1b2feb4-4586-4406-91c1-956f0828ab55")
-	)
-	(junction
-		(at 168.91 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d2ae1800-8745-473c-a87f-454001ddd3f6")
 	)
 	(junction
 		(at 233.68 120.65)
@@ -12438,12 +12444,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "eda4aa95-a6cd-48bd-b16d-dd9aaea9d2a1")
-	)
-	(junction
-		(at 168.91 92.71)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f81e1373-4092-4b39-a37e-a5ec49b9f8cf")
 	)
 	(junction
 		(at 233.68 107.95)
@@ -12643,7 +12643,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 90.17) (xy 168.91 92.71)
+			(xy 170.18 90.17) (xy 170.18 92.71)
 		)
 		(stroke
 			(width 0)
@@ -12663,7 +12663,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 92.71) (xy 168.91 95.25)
+			(xy 170.18 92.71) (xy 170.18 95.25)
 		)
 		(stroke
 			(width 0)
@@ -12703,7 +12703,7 @@
 	)
 	(wire
 		(pts
-			(xy 173.99 96.52) (xy 168.91 96.52)
+			(xy 173.99 97.79) (xy 170.18 97.79)
 		)
 		(stroke
 			(width 0)
@@ -13223,6 +13223,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 87.63) (xy 168.91 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c1b6ef1-b644-4564-8877-6bffa1dddf7f")
+	)
+	(wire
+		(pts
 			(xy 191.77 140.97) (xy 195.58 140.97)
 		)
 		(stroke
@@ -13313,6 +13323,16 @@
 	)
 	(wire
 		(pts
+			(xy 170.18 90.17) (xy 168.91 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "89adcf69-c264-4800-a923-353e6292f741")
+	)
+	(wire
+		(pts
 			(xy 191.77 135.89) (xy 195.58 135.89)
 		)
 		(stroke
@@ -13340,6 +13360,16 @@
 			(type default)
 		)
 		(uuid "8e2d92ab-10a7-47e4-9d8e-a38bb5f54108")
+	)
+	(wire
+		(pts
+			(xy 170.18 95.25) (xy 168.91 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "96418180-7dfc-41ae-a06b-2325a466a1ad")
 	)
 	(wire
 		(pts
@@ -13493,7 +13523,7 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 87.63) (xy 168.91 90.17)
+			(xy 170.18 87.63) (xy 170.18 90.17)
 		)
 		(stroke
 			(width 0)
@@ -13623,13 +13653,23 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 96.52) (xy 168.91 95.25)
+			(xy 170.18 97.79) (xy 170.18 95.25)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "df2fa77d-9e42-4b92-8242-53f2930ec512")
+	)
+	(wire
+		(pts
+			(xy 170.18 92.71) (xy 168.91 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1031c2d-375f-4824-819f-c4ddc3431e94")
 	)
 	(wire
 		(pts
@@ -14241,7 +14281,7 @@
 	)
 	(global_label "V5"
 		(shape input)
-		(at 173.99 96.52 0)
+		(at 173.99 97.79 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -14251,7 +14291,7 @@
 		)
 		(uuid "21db01b6-47ae-4c3f-890d-f355950b23f7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 179.2733 96.52 0)
+			(at 179.2733 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -18882,7 +18922,7 @@
 		(dnp no)
 		(uuid "30dd36d4-0e76-4e1b-b498-9c89d2c39083")
 		(property "Reference" "R112"
-			(at 173.482 95.25 90)
+			(at 175.006 95.25 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -19038,7 +19078,7 @@
 		(dnp no)
 		(uuid "4884d36f-27ef-4a0a-883b-af978550bb90")
 		(property "Reference" "R111"
-			(at 173.482 92.71 90)
+			(at 175.006 92.71 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -20278,7 +20318,7 @@
 		(dnp no)
 		(uuid "6678cfa9-2a15-4e4c-86cb-be5116a4799e")
 		(property "Reference" "R109"
-			(at 173.482 87.63 90)
+			(at 175.006 87.63 90)
 			(effects
 				(font
 					(size 1.016 1.016)
@@ -21909,7 +21949,7 @@
 		(dnp no)
 		(uuid "eadd7cfb-6f3e-46ba-bbb5-f81223dbc528")
 		(property "Reference" "R110"
-			(at 173.482 90.17 90)
+			(at 175.006 90.17 90)
 			(effects
 				(font
 					(size 1.016 1.016)
