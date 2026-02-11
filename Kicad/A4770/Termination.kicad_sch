@@ -6310,17 +6310,6 @@
 		)
 		(uuid "57b09ce0-9e5b-467e-8004-8bab312f1f35")
 	)
-	(text "Design improvement:\nAt 20C the maximum instantaneous forward\ncurrent is 3A and the fuse trip current \nis 3.7A. This may result in the diode \nfailing before the fuse trips."
-		(exclude_from_sim no)
-		(at 38.1 155.956 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "a481a710-45a7-430d-8680-a9980591b05c")
-	)
 	(text_box "SCSI termination power\n"
 		(exclude_from_sim no)
 		(at 15.24 130.6057 0)
@@ -15164,7 +15153,7 @@
 				)
 			)
 		)
-		(property "Value" "SS24"
+		(property "Value" "SS34"
 			(at 34.544 139.7 0)
 			(effects
 				(font
@@ -15181,7 +15170,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.onsemi.com/pdf/datasheet/mbr140sft1-d.pdf"
+		(property "Datasheet" "https://www.lcsc.com/datasheet/C466483.pdf"
 			(at 34.29 142.24 90)
 			(effects
 				(font
@@ -15217,7 +15206,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C43381"
+		(property "LCSC Part #" "C466483"
 			(at 34.29 142.24 0)
 			(effects
 				(font
