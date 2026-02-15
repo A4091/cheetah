@@ -12144,7 +12144,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "01949fa7-8a6d-4782-a63d-aa4e02dcba18")
-		(property "Reference" "U11"
+		(property "Reference" "U?"
 			(at 48.895 55.88 0)
 			(effects
 				(font
@@ -12263,6 +12263,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12275,7 +12281,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1e0295ca-c571-481a-8840-db8d45333b61")
-		(property "Reference" "U12"
+		(property "Reference" "U?"
 			(at 48.895 92.71 0)
 			(effects
 				(font
@@ -12394,6 +12400,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12405,7 +12417,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "1f6ff58d-3dc7-40ec-9123-2985a704ba35")
-		(property "Reference" "J2"
+		(property "Reference" "J?"
 			(at 86.36 104.1399 90)
 			(effects
 				(font
@@ -12491,7 +12503,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C591676"
+		(property "LCSC Part #" "C591675"
 			(at 135.89 105.41 90)
 			(effects
 				(font
@@ -12717,6 +12729,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "J?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12728,7 +12746,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "27d02c4f-c0bb-4009-9753-f39c2266d748")
-		(property "Reference" "F1"
+		(property "Reference" "F?"
 			(at 46.99 137.16 90)
 			(effects
 				(font
@@ -12772,7 +12790,7 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Part #" "C135379"
+		(property "LCSC Part #" "C780180"
 			(at 46.99 142.24 90)
 			(effects
 				(font
@@ -12781,7 +12799,16 @@
 				(hide yes)
 			)
 		)
-		(property "LCSC Alt #" "C780180"
+		(property "LCSC Alt #" "C3761950"
+			(at 46.99 142.24 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Alt 2 #" "C135379"
 			(at 46.99 142.24 90)
 			(effects
 				(font
@@ -12803,6 +12830,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "F?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12814,7 +12847,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2beb7a88-2ddb-4312-b54e-7d4e356b517f")
-		(property "Reference" "C5"
+		(property "Reference" "C?"
 			(at 275.082 69.85 0)
 			(effects
 				(font
@@ -12881,6 +12914,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12893,7 +12932,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3e824378-85a9-4c0a-8a5a-957f1d9230d0")
-		(property "Reference" "C1"
+		(property "Reference" "C?"
 			(at 231.14 69.3038 0)
 			(effects
 				(font
@@ -12978,6 +13017,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -12989,7 +13034,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "540f9223-09a0-4af7-a58b-93c58f519861")
-		(property "Reference" "C120"
+		(property "Reference" "C?"
 			(at 17.272 118.11 0)
 			(effects
 				(font
@@ -13056,6 +13101,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13068,7 +13119,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "56aa4259-8c1b-4f69-a88a-c94c01a04c46")
-		(property "Reference" "FID3"
+		(property "Reference" "FID?"
 			(at 269.24 95.2499 0)
 			(effects
 				(font
@@ -13120,6 +13171,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "FID?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13132,7 +13189,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5c63e629-59f2-4080-89f8-25769f96bc24")
-		(property "Reference" "FID2"
+		(property "Reference" "FID?"
 			(at 250.19 95.2499 0)
 			(effects
 				(font
@@ -13184,6 +13241,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "FID?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13196,7 +13259,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d7ce15c-4db4-43fd-a059-0714e51dce65")
-		(property "Reference" "#PWR03"
+		(property "Reference" "#PWR?"
 			(at 203.2 81.28 0)
 			(effects
 				(font
@@ -13250,6 +13313,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13261,7 +13330,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5f37d85f-4f2f-4c46-8754-a8091a16e61f")
-		(property "Reference" "D2"
+		(property "Reference" "D?"
 			(at 245.11 48.768 0)
 			(effects
 				(font
@@ -13335,6 +13404,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "D?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13347,7 +13422,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "68e82a8e-5b34-4ec1-8c9a-5eb8e41514a6")
-		(property "Reference" "U10"
+		(property "Reference" "U?"
 			(at 48.895 19.05 0)
 			(effects
 				(font
@@ -13466,6 +13541,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "U?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13477,7 +13558,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6f44f4b9-2b5d-43a3-8cfd-61e540dd48c5")
-		(property "Reference" "C101"
+		(property "Reference" "C?"
 			(at 24.13 44.45 0)
 			(effects
 				(font
@@ -13553,6 +13634,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13565,7 +13652,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "70947bcb-f541-40eb-812f-0f3e3503e40f")
-		(property "Reference" "FID1"
+		(property "Reference" "FID?"
 			(at 232.41 95.2499 0)
 			(effects
 				(font
@@ -13617,6 +13704,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "FID?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13628,7 +13721,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "74b79735-2951-454e-b2aa-3957292bf1d8")
-		(property "Reference" "C121"
+		(property "Reference" "C?"
 			(at 23.876 118.11 0)
 			(effects
 				(font
@@ -13704,6 +13797,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13715,7 +13814,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7ed22250-c59c-4b4a-8b51-011149aa9a02")
-		(property "Reference" "R2"
+		(property "Reference" "R?"
 			(at 222.25 43.688 90)
 			(effects
 				(font
@@ -13780,6 +13879,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13792,7 +13897,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "899b034f-3f78-4771-b012-ce6b2c282b1a")
-		(property "Reference" "J3"
+		(property "Reference" "J?"
 			(at 200.025 25.4 0)
 			(effects
 				(font
@@ -13869,6 +13974,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "J?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13881,7 +13992,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a99690cb-c763-4f2e-8efa-e06af4a8c34c")
-		(property "Reference" "#PWR02"
+		(property "Reference" "#PWR?"
 			(at 203.2 69.85 0)
 			(effects
 				(font
@@ -13935,6 +14046,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "#PWR?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -13947,7 +14064,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "add603d2-1f08-4dff-be1d-b67a367beced")
-		(property "Reference" "C2"
+		(property "Reference" "C?"
 			(at 242.57 69.3038 0)
 			(effects
 				(font
@@ -14032,6 +14149,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -14043,7 +14166,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b3b7a2df-6ff1-4461-b9b5-3671f8c14bcd")
-		(property "Reference" "J6"
+		(property "Reference" "J?"
 			(at 262.255 25.4 0)
 			(effects
 				(font
@@ -14120,6 +14243,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "J?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -14131,7 +14260,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b3d535b7-e014-4000-af18-0d672717ee02")
-		(property "Reference" "C110"
+		(property "Reference" "C?"
 			(at 17.272 81.28 0)
 			(effects
 				(font
@@ -14198,6 +14327,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -14209,7 +14344,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b704c79e-a79e-434c-a5ff-214a243d0eba")
-		(property "Reference" "J5"
+		(property "Reference" "J?"
 			(at 241.935 25.4 0)
 			(effects
 				(font
@@ -14286,6 +14421,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "J?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -14298,7 +14439,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c0a35dd4-70a1-4de6-a8bc-9224345482ee")
-		(property "Reference" "C4"
+		(property "Reference" "C?"
 			(at 264.16 69.3038 0)
 			(effects
 				(font
@@ -14383,6 +14524,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -14395,7 +14542,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c8e434ca-2386-4927-8af8-6e91650fd8c8")
-		(property "Reference" "J4"
+		(property "Reference" "J?"
 			(at 216.535 25.4 0)
 			(effects
 				(font
@@ -14472,6 +14619,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "J?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -14484,7 +14637,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cce076e6-79e1-4689-b11e-06c33d4d283d")
-		(property "Reference" "J1"
+		(property "Reference" "J?"
 			(at 86.36 35.814 90)
 			(effects
 				(font
@@ -14796,6 +14949,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "J?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -14807,7 +14966,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d51b03f6-5352-4107-81b4-14857a65d719")
-		(property "Reference" "R3"
+		(property "Reference" "R?"
 			(at 250.19 43.688 90)
 			(effects
 				(font
@@ -14872,6 +15031,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "R?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -14884,7 +15049,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ddc4720a-92e4-4f9b-a0e0-dfb1e2c95326")
-		(property "Reference" "C3"
+		(property "Reference" "C?"
 			(at 254 69.3038 0)
 			(effects
 				(font
@@ -14969,6 +15134,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -14980,7 +15151,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e5c8c191-836c-4b5b-920d-8405f83627dd")
-		(property "Reference" "C100"
+		(property "Reference" "C?"
 			(at 17.272 44.45 0)
 			(effects
 				(font
@@ -15047,6 +15218,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -15058,7 +15235,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ebe53b19-e8be-4e9a-82fa-70a41f6480f7")
-		(property "Reference" "C111"
+		(property "Reference" "C?"
 			(at 23.876 81.28 0)
 			(effects
 				(font
@@ -15134,6 +15311,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -15145,7 +15328,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f250603f-08fe-4abd-a3be-bd67079ead97")
-		(property "Reference" "D1"
+		(property "Reference" "D?"
 			(at 34.29 137.16 0)
 			(effects
 				(font
@@ -15228,6 +15411,12 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "D?")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -15240,7 +15429,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f6c47d9f-1de2-4786-a596-09b6b6a45fca")
-		(property "Reference" "C6"
+		(property "Reference" "C?"
 			(at 31.75 145.5038 0)
 			(effects
 				(font
@@ -15325,6 +15514,18 @@
 					(unit 1)
 				)
 			)
+			(project "Termination"
+				(path "/f9a7659a-a558-4c1a-ba59-fb895a40595b"
+					(reference "C?")
+					(unit 1)
+				)
+			)
 		)
 	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
 )
